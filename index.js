@@ -3,7 +3,7 @@ var app         =   express();
 var bodyParser  =   require("body-parser");
 var router      =   express.Router();
 var port        =   8080
-var mongoOp     =   require("./model/mongo");
+var mongoOp     =   require("./mongo");
 
 app.use(bodyParser.urlencoded({"extended" : true}));
 app.use(bodyParser.json());
