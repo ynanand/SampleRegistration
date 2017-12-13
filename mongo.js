@@ -1,5 +1,7 @@
 var mongoose    =   require("mongoose");
-mongoose.connect('mongodb://localhost:27017/mydb');
+mongoose.connect('mongodb://localhost:27017/mydb', {
+useMongoClient: true
+});
 
 var mongoSchema =   mongoose.Schema;
 
